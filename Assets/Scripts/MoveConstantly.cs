@@ -16,7 +16,7 @@ public class MoveConstantly : MonoBehaviour
 
     [SerializeField]
     // our direction to move in
-    private Vector2 direction = new Vector2(0, 1);
+    private Vector2 direction = new Vector2(0, -1);
 
     /// <summary>
     /// Direction provides access to the direction variable used to direct the movement of our object.

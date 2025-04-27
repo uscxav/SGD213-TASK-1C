@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemyMoveForward : MonoBehaviour {
+public class EnemyMoveForward : EngineBase {
 
-    private float acceleration = 75f;
+    
     private float initialVelocity = 2f;
-    private Rigidbody2D ourRigidbody;
+    
 
    
     void Start()
@@ -16,7 +16,7 @@ public class EnemyMoveForward : MonoBehaviour {
     }
 
    
-    void Update()
+    void Update ()
     {
         // add force using acceleration
         Vector2 ForceToAdd = Vector2.down * acceleration * Time.deltaTime;
